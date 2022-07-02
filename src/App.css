@@ -1,3 +1,4 @@
+header{position:relative; z-index:9;}
 header h1{text-align:center; padding:4rem 0 2rem;}
 header h1 a{font-size:1.75rem; font-weight:700}
 
@@ -8,7 +9,7 @@ img{width:50%; max-width:350px; animation:rotation infinite 7s linear;}
 }
 
 Nav{position:relative; margin:4rem 0 0; z-index:9;}
-Nav ol{display:flex; flex-wrap:wrap; justify-content: center; gap:1.25rem;}
+Nav ol{display:flex; flex-wrap:wrap; justify-content: center; gap:1.5rem;}
 Nav li a{display:inline-block; font-size:1.25rem; transition:all .3s;}
 Nav li a:hover{color:#61dbfc; transform:translateY(-7px);}
 

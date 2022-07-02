@@ -177,7 +177,7 @@ function App() {
         <li><a href="/create" onClick={(e)=>{
           e.preventDefault();
           setMode('CREATE');
-        }}>Create</a></li>
+        }}>Create Menu</a></li>
         {contextControl}
       </ul>
     </div>
