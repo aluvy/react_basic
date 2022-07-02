@@ -20,6 +20,6 @@ article span{line-height:1.6; color:rgba(255,255,255,.7);}
 .btn{display:flex; align-items:center; justify-content: space-between; gap:.5rem; margin:2rem;}
 .btn li:first-child{margin-right:auto;}
 .btn li a,
-.btn li button{display:inline-block; width:6rem; height:2.5rem; line-height:2.5rem; font-size:.875rem; text-align:center; color:rgba(255,255,255,.6); border:1px solid rgba(255,255,255,.2); border-radius:3px; box-sizing:content-box; transition:all .3s;}
+.btn li button{display:inline-block; min-width:4rem; height:2.5rem; line-height:2.5rem;  padding:0 1rem; font-size:.875rem; text-align:center; color:rgba(255,255,255,.6); border:1px solid rgba(255,255,255,.2); border-radius:3px; box-sizing:content-box; transition:all .3s;}
 .btn li a:hover,
 .btn li button:hover{border-color:#fff; color:#fff;}
