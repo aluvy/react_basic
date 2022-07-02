@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/aluvy/react_basic.git/static/css/main.e7131bdd.css",
+    "main.js": "/aluvy/react_basic.git/static/js/main.5722c79f.js",
+    "static/js/787.293c2eec.chunk.js": "/aluvy/react_basic.git/static/js/787.293c2eec.chunk.js",
+    "static/media/logo.svg": "/aluvy/react_basic.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/aluvy/react_basic.git/index.html",
+    "main.e7131bdd.css.map": "/aluvy/react_basic.git/static/css/main.e7131bdd.css.map",
+    "main.5722c79f.js.map": "/aluvy/react_basic.git/static/js/main.5722c79f.js.map",
+    "787.293c2eec.chunk.js.map": "/aluvy/react_basic.git/static/js/787.293c2eec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7131bdd.css",
+    "static/js/main.5722c79f.js"
+  ]
+}
