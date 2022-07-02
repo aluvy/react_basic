@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+header h1{text-align:center; padding:4rem 0 2rem;}
+header h1 a{font-size:1.75rem; font-weight:700}
+
+img{width:50%; max-width:350px; animation:rotation infinite 7s linear;}
+@keyframes rotation {
+  0%{transform:rotate(0);}
+  100%{transform:rotate(360deg);}
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+Nav{position:relative; margin:4rem 0 0; z-index:9;}
+Nav ol{display:flex; flex-wrap:wrap; justify-content: center; gap:1.25rem;}
+Nav li a{display:inline-block; font-size:1.25rem; transition:all .3s;}
+Nav li a:hover{color:#61dbfc; transform:translateY(-7px);}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+article{padding:3rem; margin:2rem; background:rgba(0,0,0,0.2); border-radius:10px;}
+article h2{font-size:2rem; font-weight: 700; margin: 0 0 2rem;}
+article span{line-height:1.6; color:rgba(255,255,255,.7);}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.btn{display:flex; align-items:center; justify-content: space-between; gap:.5rem; margin:2rem;}
+.btn li:first-child{margin-right:auto;}
+.btn li a,
+.btn li button{display:inline-block; width:6rem; height:2.5rem; line-height:2.5rem; font-size:.875rem; text-align:center; color:rgba(255,255,255,.6); border:1px solid rgba(255,255,255,.2); border-radius:3px; box-sizing:content-box; transition:all .3s;}
+.btn li a:hover,
+.btn li button:hover{border-color:#fff; color:#fff;}

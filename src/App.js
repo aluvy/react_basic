@@ -1,15 +1,6 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import {useState} from 'react'; // useState hook을 사용한다
-
-function Article(props){
-  return (
-    <article>
-      <h2>{props.title}</h2>
-      {props.body}
-    </article>
-  );
-}
 
 function Header(props){
   return (
@@ -19,6 +10,15 @@ function Header(props){
         props.onChangeMode(); // 함수 호출 (함수이기 때문에 ())
       }}>{props.title}</a></h1>
     </header>
+  );
+}
+
+function Article(props){
+  return (
+    <article>
+      <h2>{props.title}</h2>
+      <span>{props.body}</span>
+    </article>
   );
 }
 
@@ -90,15 +90,15 @@ function App() {
   const [nextId, setNextId] = useState(4);
 
   const [topics, setTopics] = useState([
-    {id:1, title: 'html', body:'html is...'},
-    {id:2, title: 'CSS', body: 'CSS is ...'},
-    {id:3, title: 'JavaScript', body: 'JavaScript is ...'}
+    {id:1, title: 'html', body:'html is ... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, nostrum soluta! Vitae nobis porro aut optio assumenda reprehenderit excepturi enim voluptatem itaque beatae? Neque odio iusto tempore soluta porro repellat.'},
+    {id:2, title: 'CSS', body: 'CSS is ... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, nostrum soluta! Vitae nobis porro aut optio assumenda reprehenderit excepturi enim voluptatem itaque beatae? Neque odio iusto tempore soluta porro repellat.'},
+    {id:3, title: 'JavaScript', body: 'JavaScript is ... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, nostrum soluta! Vitae nobis porro aut optio assumenda reprehenderit excepturi enim voluptatem itaque beatae? Neque odio iusto tempore soluta porro repellat.'}
   ]);
 
   let content = null;
 
   if(mode === 'WELCOME'){
-    content = <Article title="Welcome" body="Hello, WEB" />
+    content = <Article title="Welcome" body="Hello, I'm React Basic Source Code. Here, you can create a menu with create and modify or delete the generated menu. Have a nice day :)" />
 
   } else if (mode === 'READ'){
     let title, body = null;
@@ -164,15 +164,16 @@ function App() {
 
   return (
     <div>
-      <Header title="WEB" onChangeMode={() => {
+      <Header title="React Basic" onChangeMode={() => {
         setMode('WELCOME');
       }} />
+      <img src={logo} alt="React"></img>
       <Nav topics={topics} onChangeMode={(_id)=>{
         setMode('READ');
         setId(_id);
       }} />
       {content}
-      <ul>
+      <ul className="btn">
         <li><a href="/create" onClick={(e)=>{
           e.preventDefault();
           setMode('CREATE');
