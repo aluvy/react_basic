@@ -65,7 +65,7 @@ a, a:hover, a:active, a:focus{text-decoration: none; color:inherit;}
 } */
 
 
-#root{text-align:center; margin:0 auto; max-width:1000px; min-width:500px;}
+#root{text-align:center; margin:0 auto; max-width:1000px; min-width:320px;}
 
 form{padding:0 2rem;}
 input, textarea{width:100%; border:1px solid rgba(255,255,255,.2); border-radius:3px; box-sizing:border-box; padding:10px; transition:all .3s;}
